@@ -1,0 +1,59 @@
+{
+	"rel": "episode/episode",
+	"id": "f24a463c654a0510VgnVCM1000000b43150a____",
+	"uriId": "BSKY_CBEEBIES/TITL0000000002304833",
+	"title": "Ep 1 Katie Morag Delivers The Mail",
+	"sortTitle": "Katie Morag 1:2",
+	"synopsis": "EP3 Katie Morag tries to help her busy parents by delivering the mail to everyone on the island.  In a moment's distraction, her plans go awry and in trying to make things better, she actually makes things worse! But with the help of her beloved Grannie Island, she eventually sorts everything out, and learns something too.",
+	"shortSynopsis": "EP3 Katie Morag tries to help her busy parents by delivering mail to everyone on the island.",
+	"certificate": "Unrated",
+	"version": "20.0.44",
+	"durationMinutes": 14,
+	"rightsStartDate": "2016-04-30T23:00:00.000Z",
+	"rightsEndDate": "2016-09-30T22:59:59.000Z",
+	"images": [],
+	"categories": [
+		"Learning"
+	],
+	"classifications": [
+		"SKYKIDS/Learning"
+	],
+	
+	"contentSegments": [
+		"Variety"
+	],
+	"number": 1,
+	"seriesNumber": 1,
+	"startOfCredits": 816016,
+	"durationInMilliSeconds": 846016,
+
+	"downloadable": false,
+	"_links": [
+		{
+			"_href": "http://content.ott.sky.com/v3/brands/go/devices/kids/content/videos/episodes/96125b18cc584510VgnVCM1000000b43150a____",
+			"_rel": "self/episode",
+			"_attributes": {
+			}
+		},
+		{
+			"_href": "http://content.ott.sky.com/v3/brands/go/devices/kids/content/broadcast-channels/26a4c8df40c4d410VgnVCM1000000b43150a____",
+			"_rel": "broadcast-channel/broadcast-channel",
+			"_attributes": {
+			},
+			"_title": "CBeebies"
+		},
+		{
+			"_href": "http://content.ott.sky.com/v3/brands/go/devices/kids/content/series/e6195b18cc584510VgnVCM1000000b43150a____",
+			"_rel": "series/series",
+			"_attributes": {
+			},
+			"_title": "Katie Morag Series 1"
+		},
+		{
+			"_href": "http://content.ott.sky.com/v3/brands/go/devices/kids/content/videos/episodes/96125b18cc584510VgnVCM1000000b43150a____/next-episodes",
+			"_rel": "next-episodes/next-episodes",
+			"_attributes": {
+			}
+		}
+	]
+}

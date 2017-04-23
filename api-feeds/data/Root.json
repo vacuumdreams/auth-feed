@@ -1,0 +1,35 @@
+{
+	"rel": "device/device",
+	"_links": [
+		{
+			"_href": "http://localhost:8080/root",
+			"_rel": "self/device",
+			"_attributes": {
+			}
+		},
+		{
+			"_href": "http://localhost:8080/d505864f17b3d310VgnVCM100000255212ac____",
+			"_rel": "navigation/node",
+			"_attributes": {
+				"navIdentifier": "Ep1"
+			},
+			"_title": "Episode1"
+		},
+		{
+			"_href": "http://localhost:8080/5b6415fc4a9ff410VgnVCM1000000b43150a____",
+			"_rel": "navigation/node",
+			"_attributes": {
+				"navIdentifier": "Ep2"
+			},
+			"_title": "Episode2"
+		},
+		{
+			"_href": "http://localhost:8080/f24a463c654a0510VgnVCM1000000b43150a____",
+			"_rel": "navigation/node",
+			"_attributes": {
+				"navIdentifier": "Ep3"
+			},
+			"_title": "Episode3"
+		}
+	]
+}

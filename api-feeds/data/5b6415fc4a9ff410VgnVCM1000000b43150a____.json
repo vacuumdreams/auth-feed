@@ -1,0 +1,32 @@
+{
+	"rel": "episode/episode",
+	"id": "5b6415fc4a9ff410VgnVCM1000000b43150a____",
+	"uriId": "BSKY_CBEEBIES/TITL0000000002304833",
+	"title": "Ep 2 Katie Morag.....",
+	"sortTitle": "Katie Morag 1:2",
+	"synopsis": "EP2 Katie Morag tries to help her busy parents by delivering the mail to everyone on the island.  In a moment's distraction, her plans go awry and in trying to make things better, she actually makes things worse! But with the help of her beloved Grannie Island, she eventually sorts everything out, and learns something too.",
+	"shortSynopsis": "EP2 Katie Morag tries to help her busy parents by delivering mail to everyone on the island.",
+	"certificate": "Unrated",
+	"version": "20.0.44",
+	"durationMinutes": 14,
+	"rightsStartDate": "2016-04-30T23:00:00.000Z",
+	"rightsEndDate": "2016-09-30T22:59:59.000Z",
+	"images": [],
+	"categories": [
+		"Learning"
+	],
+	"classifications": [
+		"SKYKIDS/Learning"
+	],
+	
+	"contentSegments": [
+		"Variety"
+	],
+	"number": 1,
+	"seriesNumber": 1,
+	"startOfCredits": 816016,
+	"durationInMilliSeconds": 846016,
+
+	"downloadable": false,
+	"_links": []
+}

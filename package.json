@@ -1,0 +1,21 @@
+{
+  "name": "feed-project",
+  "version": "0.1.0",
+  "description": "simple microservice architecture with dummy header authorization for providing feeds",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "ramda"
+  ],
+  "author": "Botond Fekete",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "ramda": "^0.23.0"
+  }
+}
