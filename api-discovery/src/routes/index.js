@@ -25,9 +25,9 @@ const addServiceRoute = (acc, service) =>
     get: (req, res) => res.status(200).send(service)
   }, {}))
 
-const serviceRoutes = reduce(addServiceRoute, {}, services)
+const routes = reduce(addServiceRoute, {}, services)
 
-module.exports = config => merge(serviceRoutes, {
+module.exports = config => merge(routes, {
   '/': {
     get: (req, res) => res.status(200).send(services)
   }
