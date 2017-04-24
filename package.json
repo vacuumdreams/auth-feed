@@ -4,7 +4,9 @@
   "description": "simple microservice architecture with dummy header authorization for providing feeds",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "./node_modules/.bin/eslint --config .eslintrc */src/**/*.js --fix", 
+    "start": "node_modules/.bin/gulp",
+    "test": "./node_modules/.bin/mocha ./**/__unit/*.js"
   },
   "keywords": [
     "node",
@@ -17,7 +19,14 @@
     "bluebird": "^3.5.0",
     "cors": "^2.8.3",
     "express": "^4.15.2",
+    "gulp": "^3.9.1",
     "node-fetch": "^1.6.3",
     "ramda": "^0.23.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "mocha": "^3.2.0",
+    "sinon": "^2.1.0"
   }
 }
