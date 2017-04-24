@@ -1,5 +1,5 @@
 const episodes = require('./episodes')
 
-module.exports = (config, {discover}) => ({
-  '/episodes': episodes(config, discover),
+module.exports = (config, {client, discover}) => ({
+  '/episodes': episodes(config, client, discover),
 })

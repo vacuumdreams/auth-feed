@@ -1,4 +1,4 @@
-const {curry, is, map} = require('ramda')
+const {compose, curry, filter, is, map} = require('ramda')
 const fs = require('fs')
 const Promise = require('bluebird')
 
@@ -8,7 +8,12 @@ const readDir = Promise.promisify(fs.readdir)
 const readFile = Promise.promisify(fs.readFile)
 
 const getFileContents = curry((storage, files) =>
-  Promise.all(map(fileName => readFile(`${storage}/${fileName}`), is(Array, files) ? files : [files]))
+  Promise.all(
+    compose(
+      map(fileName => readFile(`${storage}/${fileName}`)),
+      filter(fileName => fileName.indexOf('.json') > 1)
+    )(is(Array, files) ? files : [files])
+  )
   .catch(() => {
     throw new ErrorFileNotFound('File not found')
   })
@@ -26,7 +31,8 @@ module.exports = config => filename => {
       .then(getFileContents(config.storage))
   }
   return contents.then(map(bufferToJson))
-  .catch(() => {
+  .catch(err => {
+    if (err instanceof ErrorFileNotFound) throw err
     throw new ErrorFileCorrupt('File could not be parsed')
   })
 }

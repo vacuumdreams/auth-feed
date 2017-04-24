@@ -1,14 +1,13 @@
 const Promise = require('bluebird')
-const {get} = require('../../../lib/client')
-const {applySpec, compose, equals, filter, head, map, not, prop} = require('ramda')
+const {applySpec, compose, equals, filter, head, map, prop} = require('ramda')
 
-const getNavNode = compose(get, prop('_href'))
-const selectChildren = compose(not, equals('self/device'), prop('_rel'))
+const getNavNode = client => compose(client, prop('_href'))
+const selectChild = compose(equals('navigation/node'), prop('_rel'))
 
-const getChildren = compose(
+const getChildren = client => compose(
   Promise.all,
-  map(getNavNode),
-  filter(selectChildren),
+  map(getNavNode(client)),
+  filter(selectChild),
   prop('_links'),
   head
 )
@@ -18,11 +17,11 @@ const toStructure = map(compose(applySpec({
   synopsis: prop('shortSynopsis'),
 }), head))
 
-module.exports = (config, discover) => ({
+module.exports = (config, client, discover) => ({
   get: (req, res) =>
     discover('feeds')
-    .then(({route}) => get(route))
-    .then(getChildren)
+    .then(({route}) => client(route))
+    .then(getChildren(client))
     .then(toStructure)
     .then(result => res.status(200).send(result))
     .catch(() => res.status(500).send({message: 'Something went wrong'})),

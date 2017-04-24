@@ -7,6 +7,7 @@ module.exports = {
     cors: '*',
   },
   services: {
+    client: {},
     discover: {
       url: getUrl('DISCOVER') || 'http://localhost:8010',
     },
