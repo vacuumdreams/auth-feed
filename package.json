@@ -4,7 +4,7 @@
   "description": "simple microservice architecture with dummy header authorization for providing feeds",
   "main": "index.js",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint --config .eslintrc */src/**/*.js --fix", 
+    "lint": "./node_modules/.bin/eslint --config .eslintrc */src/**/*.js --fix",
     "start": "node_modules/.bin/gulp",
     "test": "./node_modules/.bin/mocha ./**/__unit/*.js"
   },
@@ -24,8 +24,10 @@
     "ramda": "^0.23.0"
   },
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
     "chai": "^3.5.0",
     "eslint": "^3.19.0",
+    "eslint-plugin-babel": "^4.1.1",
     "mocha": "^3.2.0",
     "sinon": "^2.1.0"
   }

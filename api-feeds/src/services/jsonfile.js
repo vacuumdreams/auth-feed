@@ -1,6 +1,5 @@
-const {compose, curry, fromPairs, is, map, transpose} = require('ramda')
+const {curry, is, map} = require('ramda')
 const fs = require('fs')
-const path = require('path')
 const Promise = require('bluebird')
 
 const {ErrorFileNotFound, ErrorFileCorrupt} = require('../errors')

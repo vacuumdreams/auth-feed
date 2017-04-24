@@ -1,3 +1,3 @@
 module.exports = ({jsonfile}) => ({
-  jsonfile: require('./jsonfile')(jsonfile)
+  jsonfile: require('./jsonfile')(jsonfile),
 })
